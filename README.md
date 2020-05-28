@@ -3,7 +3,12 @@ I created this repo because there are times, I just want a CLI interface into my
 
 So, I have create a config for "OpenConnect" which is compatible with "Cisco Anyconnect" which will allow my Docker container to connect to my Company's vpn and give me a shell prompt where I can ssh to any host in my company.
 
-# Build the container
+# Pull the lates version of the image
+
+docker pull docker.pkg.github.com/eperry/docker-vpn-openconnect/openconnect:latest
+
+# OR Build the container (Reccomended)
+
 copy the default config file ( Minimum of what I us, your config maybe different )
 
 ```

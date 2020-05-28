@@ -4,5 +4,5 @@ screen -t "OpenConnect" 0 /usr/sbin/openconnect ${VPNSERVER} --config=/root/open
 screen -t "Bash" 1 /bin/bash -l
 
 hardstatus on
-hardstatus alwayslastline
+#hardstatus alwayslastline
 hardstatus alwayslastline "%{= Y}%H    %{= C}%w"
