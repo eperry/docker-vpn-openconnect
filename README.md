@@ -3,6 +3,12 @@ I created this repo because there are times, I just want a CLI interface into my
 
 So, I have create a config for "OpenConnect" which is compatible with "Cisco Anyconnect" which will allow my Docker container to connect to my Company's vpn and give me a shell prompt where I can ssh to any host in my company.
 
+# Requirements
+docker install 
+  I use windows 10 - https://docs.docker.com/docker-for-windows/install/
+  and I also use Windows 10 Linx subsystem "WSL2"  https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+
 # Build the container
 copy the default config file ( Minimum of what I us, your config maybe different )
 
