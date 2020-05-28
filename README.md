@@ -7,6 +7,13 @@ So, I have create a config for "OpenConnect" which is compatible with "Cisco Any
 
 docker pull docker.pkg.github.com/eperry/docker-vpn-openconnect/openconnect:latest
 
+
+# Requirements
+docker install 
+  I use windows 10 - https://docs.docker.com/docker-for-windows/install/
+  and I also use Windows 10 Linx subsystem "WSL2"  https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+
 # OR Build the container (Reccomended)
 
 copy the default config file ( Minimum of what I us, your config maybe different )
