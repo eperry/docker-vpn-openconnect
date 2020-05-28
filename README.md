@@ -2,13 +2,24 @@
 Connect to a VPN server with Openconnect within a docker container.
 
 # Build the container
+copy the default config file ( Minimum of what I us, your config maybe different )
+
+```
+cp openconnect-config.example openconnect-config
+```
+
+Build the container
+
 ```
 docker build --rm=true -t eperry:openconnect .
 ```
+
 # RUN The container and capture the Container id
+
 ```
 export CID=`docker run -d --rm --privileged -e VPNSERVER='https://YOURSERVER" eperry:openconnect`
 ```
+
 # Attached to the Docker container, on the "OpenConnect" screen
 
 ```
