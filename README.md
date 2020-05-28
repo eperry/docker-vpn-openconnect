@@ -1,5 +1,7 @@
-# docker-vpn-openconnect
-Connect to a VPN server with Openconnect within a docker container.
+
+I created this repo because there are times, I just want a CLI interface into my company so I can ssh to a couple servers and want to avoid connecting my entire PC to the company network
+
+So, I have create a config for "OpenConnect" which is compatible with "Cisco Anyconnect" which will allow my Docker container to connect to my Company's vpn and give me a shell prompt where I can ssh to any host in my company.
 
 # Build the container
 copy the default config file ( Minimum of what I us, your config maybe different )
@@ -26,7 +28,7 @@ export CID=`docker run -d --rm --privileged -e VPNSERVER='https://YOURSERVER" ep
 docker exec -it $CID screen -r -p 'OpenConnect'
 ```
 
-Now you can, CTL-A 1  to swtich to a bash prompt
+Now you can, CTL-a 1  to swtich to a pre-setup bash prompt or use ***screen*** to create more windows
 
 # Kill the container
 
@@ -37,7 +39,6 @@ docker kill $CID
 ```
 
 # enhance your config file
-
 
 ```
 user=<yourid>
