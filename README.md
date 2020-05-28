@@ -24,3 +24,13 @@ The container should terminiate on logout but if you want to be sure
 ```
 docker kill $CID
 ```
+
+# enhance your config file
+
+
+```
+user=<yourid>
+authgroup="General Access" 
+quiet
+no-dtls
+```

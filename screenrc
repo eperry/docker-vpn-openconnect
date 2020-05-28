@@ -1,0 +1,8 @@
+defscrollback 1000
+
+screen -t "OpenConnect" 0 /usr/sbin/openconnect ${VPNSERVER} --config=/root/openconnect-config
+screen -t "Bash" 1 /bin/bash -l
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus alwayslastline "%{= Y}%H    %{= C}%w"
