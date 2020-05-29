@@ -64,6 +64,8 @@ no-dtls
 
 # Something cool
 
+Lets now spawn up a proxy server to browe the VPN'd network. Now I could have done it all in one container. But this way you can spawn any container and re-use the connection:wq
+
 ## deploy and connect the vpn
 
 
