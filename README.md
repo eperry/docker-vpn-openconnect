@@ -70,7 +70,7 @@ Lets now spawn up a proxy server to browe the VPN'd network. Now I could have do
 
 
 ```
-export CID=`docker run -d --rm --privileged -e VPNSERVER='https://connect.saksinc.com' -p 8888:8888 --name openconnect eperry:openconnect
+export CID=`docker run -d --rm --privileged -e VPNSERVER='https://YOURVPNSITE' -p 8888:8888 --name openconnect eperry:openconnect
 ```
 ***NOTE*** notice the "-p 8888:8888" this is for the next step proxy server
 
